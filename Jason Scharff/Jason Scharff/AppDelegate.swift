@@ -25,8 +25,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     // Override point for customization after application launch.
     
+    var autoUser = Profile(name: "Jason Scharff")
+    autoUser.addProfileElement(<#heading: String#>, description: <#String#>)
+    UserInfo.currentUser = autoUser
     
-    UserInfo.currentUser = Profile(name: "Jason Scharff")
     
     
     return true

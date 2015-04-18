@@ -15,8 +15,9 @@
 		BE3D66A71ADD5E6B005665D5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE3D66A61ADD5E6B005665D5 /* Images.xcassets */; };
 		BE3D66AA1ADD5E6B005665D5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE3D66A81ADD5E6B005665D5 /* LaunchScreen.xib */; };
 		BE3D66B61ADD5E6B005665D5 /* Jason_ScharffTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3D66B51ADD5E6B005665D5 /* Jason_ScharffTests.swift */; };
+		BE654B5A1AE1A8D30045175A /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE654B591AE1A8D30045175A /* URL.swift */; };
 		BEDC5C281ADF6D4C0086F03C /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDC5C271ADF6D4C0086F03C /* Profile.swift */; };
-		BEDC5C2A1ADF75590086F03C /* DetailButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDC5C291ADF75590086F03C /* DetailButton.swift */; };
+		BEEF6F9A1AE1833200FB4F9B /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEF6F991AE1833200FB4F9B /* CircleButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,8 +43,9 @@
 		BE3D66AF1ADD5E6B005665D5 /* Jason ScharffTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Jason ScharffTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE3D66B41ADD5E6B005665D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE3D66B51ADD5E6B005665D5 /* Jason_ScharffTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jason_ScharffTests.swift; sourceTree = "<group>"; };
+		BE654B591AE1A8D30045175A /* URL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
 		BEDC5C271ADF6D4C0086F03C /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
-		BEDC5C291ADF75590086F03C /* DetailButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailButton.swift; sourceTree = "<group>"; };
+		BEEF6F991AE1833200FB4F9B /* CircleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CircleButton.swift; path = "Jason Scharff/CircleButton.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 		BE3D668E1ADD5E6B005665D5 = {
 			isa = PBXGroup;
 			children = (
+				BEEF6F991AE1833200FB4F9B /* CircleButton.swift */,
 				BE3D66991ADD5E6B005665D5 /* Jason Scharff */,
 				BE3D66B21ADD5E6B005665D5 /* Jason ScharffTests */,
 				BE3D66981ADD5E6B005665D5 /* Products */,
@@ -87,9 +90,9 @@
 			children = (
 				BE3D669C1ADD5E6B005665D5 /* AppDelegate.swift */,
 				BE3D66A11ADD5E6B005665D5 /* ViewController.swift */,
-				BEDC5C291ADF75590086F03C /* DetailButton.swift */,
 				BE114C141ADE1C9C002ECBD5 /* User.swift */,
 				BEDC5C271ADF6D4C0086F03C /* Profile.swift */,
+				BE654B591AE1A8D30045175A /* URL.swift */,
 				BE3D66A31ADD5E6B005665D5 /* Main.storyboard */,
 				BE3D66A61ADD5E6B005665D5 /* Images.xcassets */,
 				BE3D66A81ADD5E6B005665D5 /* LaunchScreen.xib */,
@@ -227,8 +230,9 @@
 				BE114C151ADE1C9C002ECBD5 /* User.swift in Sources */,
 				BEDC5C281ADF6D4C0086F03C /* Profile.swift in Sources */,
 				BE3D66A21ADD5E6B005665D5 /* ViewController.swift in Sources */,
+				BE654B5A1AE1A8D30045175A /* URL.swift in Sources */,
+				BEEF6F9A1AE1833200FB4F9B /* CircleButton.swift in Sources */,
 				BE3D669D1ADD5E6B005665D5 /* AppDelegate.swift in Sources */,
-				BEDC5C2A1ADF75590086F03C /* DetailButton.swift in Sources */,
 				BE3D66A01ADD5E6B005665D5 /* Jason_Scharff.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

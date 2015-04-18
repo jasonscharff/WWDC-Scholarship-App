@@ -12,26 +12,44 @@ import UIKit
 class Profile
 {
   var name : String
-  var details : [String : String]
+  var details : [String : AnyObject]
   var backgroundImage : UIImage
+  
+  enum DescriptionTypes
+  {
+    case ViewController
+    case String
+    case URL
+    case NotFound
+  }
   
   init(name : String)
   {
     self.name = name;
-    self.details = [String : String]()
+    self.details = [String : AnyObject]()
     self.backgroundImage = UIImage(named:"background.png")!
   }
   
-  init(name : String, image : UIImage)
+  init(name : String, backgroundImage : UIImage)
   {
     self.name = name
-    self.details = [String : String]()
-    self.backgroundImage = image
+    self.details = [String : AnyObject]()
+    self.backgroundImage = backgroundImage
   }
   
   func addProfileElement(heading : String, description : String)
   {
     self.details[heading] = description
+  }
+  
+  func addProfileElement(heading: String, url : URL)
+  {
+    self.details[heading] = url
+  }
+  
+  func addProfileElement(heading : String, controller : ViewController)
+  {
+    self.details[heading] = controller
   }
   
   func isValidUser() -> Bool
@@ -42,6 +60,27 @@ class Profile
     }
     
     return false
+  }
+  
+  func getType(heading : String) -> DescriptionTypes
+  {
+    var description = self.details[heading]
+    if description is String
+    {
+      return DescriptionTypes.String
+    }
+    else if description is URL
+    {
+      return DescriptionTypes.URL
+    }
+    else if description is ViewController
+    {
+      return DescriptionTypes.ViewController
+    }
+    else
+    {
+      return DescriptionTypes.NotFound
+    }
   }
  
   
