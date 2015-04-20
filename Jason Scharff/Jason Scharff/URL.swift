@@ -8,7 +8,12 @@
 
 import Foundation
 
-class URL : String
+class URL
 {
+  var url : String;
   
+  init(url : String)
+  {
+    self.url = url;
+  }
 }

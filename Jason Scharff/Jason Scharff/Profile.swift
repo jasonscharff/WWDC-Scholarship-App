@@ -47,7 +47,7 @@ class Profile
     self.details[heading] = url
   }
   
-  func addProfileElement(heading : String, controller : ViewController)
+  func addProfileElement(heading : String, controller : UIViewController)
   {
     self.details[heading] = controller
   }
@@ -64,7 +64,7 @@ class Profile
   
   func getType(heading : String) -> DescriptionTypes
   {
-    var description = self.details[heading]
+    var description: AnyObject? = self.details[heading]
     if description is String
     {
       return DescriptionTypes.String
@@ -73,7 +73,7 @@ class Profile
     {
       return DescriptionTypes.URL
     }
-    else if description is ViewController
+    else if description is UIViewController
     {
       return DescriptionTypes.ViewController
     }
@@ -81,6 +81,11 @@ class Profile
     {
       return DescriptionTypes.NotFound
     }
+  }
+  
+  func getButtonCount() -> Int
+  {
+    return details.count
   }
  
   

@@ -25,9 +25,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     // Override point for customization after application launch.
     
-    var autoUser = Profile(name: "Jason Scharff")
-    autoUser.addProfileElement(<#heading: String#>, description: <#String#>)
+    var autoUser : Profile = Profile(name: "Jason Scharff")
+    autoUser.addProfileElement("Education", controller: Education())
+    autoUser.addProfileElement("Work", controller: Work())
+    autoUser.addProfileElement("Hackathon", controller: Hackathon())
+    autoUser.addProfileElement("Contact", controller: Contact())
     UserInfo.currentUser = autoUser
+    
+    var pageControl = UIPageControl.appearance()
+    pageControl.pageIndicatorTintColor = UIColor.blackColor()
+    pageControl.currentPageIndicatorTintColor = UIColor.purpleColor()
+    pageControl.backgroundColor = UIColor.whiteColor()
     
     
     
@@ -63,7 +71,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   lazy var applicationDocumentsDirectory: NSURL = {
       // The directory the application uses to store the Core Data store file. This code uses a directory named "com.jasonscharff.Jason_Scharff" in the application's documents Application Support directory.
       let urls = NSFileManager.defaultManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)
-      return urls[urls.count-1] as NSURL
+      return urls[urls.count-1] as! NSURL
   }()
 
   lazy var managedObjectModel: NSManagedObjectModel = {
