@@ -16,6 +16,7 @@ class Hackathon: UIPageViewController, UIPageViewControllerDataSource {
   init()
   {
     super.init(transitionStyle: UIPageViewControllerTransitionStyle.Scroll, navigationOrientation: UIPageViewControllerNavigationOrientation.Horizontal, options: nil)
+    self.title = "Hackathon"
   }
   
   required init(coder aDecoder: NSCoder)
