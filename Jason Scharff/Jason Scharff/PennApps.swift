@@ -8,31 +8,9 @@
 
 import Foundation
 import UIKit
-class PennApps : UIViewController
+class PennApps : SpecificHackathon
 {
   override func viewDidLoad() {
-    super.viewDidLoad()
-    self.view.backgroundColor = UIColor.whiteColor()
+    super.viewDidLoad("pennapps.png")
   }
-  
-  override func viewDidAppear(animated: Bool) {
-    configureNavbar()
-  }
-  
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
-  }
-  
-  func configureNavbar()
-  {
-    var nav = self.navigationController?.navigationBar
-    let currentUser: Profile = UserInfo.currentUser!
-    nav?.topItem?.title = "Hackathon"
-    nav?.barTintColor = UIColor(red : 192/255 ,green : 57/255 , blue : 43/255, alpha: 1.0)
-    nav?.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "AvenirNext-UltraLight", size: 25)!,  NSForegroundColorAttributeName: UIColor.whiteColor()]
-    self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "Back", style: UIBarButtonItemStyle.Plain, target: nil, action: nil)
-    nav?.tintColor = UIColor.whiteColor()
-  }
-  
 }
