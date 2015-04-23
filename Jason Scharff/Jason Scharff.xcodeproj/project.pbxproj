@@ -25,6 +25,7 @@
 		BE71B3051AE47CD100705BDF /* HSHacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE71B3041AE47CD100705BDF /* HSHacks.swift */; };
 		BEAF913B1AE5444100C4C897 /* SpecificHackathon.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAF913A1AE5444100C4C897 /* SpecificHackathon.swift */; };
 		BEDC5C281ADF6D4C0086F03C /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDC5C271ADF6D4C0086F03C /* Profile.swift */; };
+		BEE5A25E1AE7E55600F8B48F /* TTTAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE5A25D1AE7E55600F8B48F /* TTTAttributedLabel.m */; };
 		BEEF6F9A1AE1833200FB4F9B /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEF6F991AE1833200FB4F9B /* CircleButton.swift */; };
 		BEFE057E1AE4B497004313B8 /* hshacks.png in Resources */ = {isa = PBXBuildFile; fileRef = BEFE057B1AE4B497004313B8 /* hshacks.png */; };
 		BEFE057F1AE4B497004313B8 /* pennapps.png in Resources */ = {isa = PBXBuildFile; fileRef = BEFE057C1AE4B497004313B8 /* pennapps.png */; };
@@ -64,6 +65,9 @@
 		BE71B3041AE47CD100705BDF /* HSHacks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSHacks.swift; sourceTree = "<group>"; };
 		BEAF913A1AE5444100C4C897 /* SpecificHackathon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpecificHackathon.swift; sourceTree = "<group>"; };
 		BEDC5C271ADF6D4C0086F03C /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		BEE5A2571AE7E47B00F8B48F /* Jason Scharff-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Jason Scharff-Bridging-Header.h"; sourceTree = "<group>"; };
+		BEE5A25C1AE7E55600F8B48F /* TTTAttributedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTAttributedLabel.h; sourceTree = "<group>"; };
+		BEE5A25D1AE7E55600F8B48F /* TTTAttributedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTAttributedLabel.m; sourceTree = "<group>"; };
 		BEEF6F991AE1833200FB4F9B /* CircleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
 		BEFE057B1AE4B497004313B8 /* hshacks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hshacks.png; sourceTree = "<group>"; };
 		BEFE057C1AE4B497004313B8 /* pennapps.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pennapps.png; sourceTree = "<group>"; };
@@ -91,10 +95,12 @@
 		BE3D668E1ADD5E6B005665D5 = {
 			isa = PBXGroup;
 			children = (
+				BEE5A25B1AE7E48D00F8B48F /* Third Party */,
 				BE3D66991ADD5E6B005665D5 /* Jason Scharff */,
 				BE3D66B21ADD5E6B005665D5 /* Jason ScharffTests */,
 				BE3D66981ADD5E6B005665D5 /* Products */,
 				BEFE05811AE4B49C004313B8 /* Images */,
+				BEE5A2571AE7E47B00F8B48F /* Jason Scharff-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -164,6 +170,15 @@
 				BE71B2FE1AE4626200705BDF /* Contact.swift */,
 			);
 			name = "Jason Specific";
+			sourceTree = "<group>";
+		};
+		BEE5A25B1AE7E48D00F8B48F /* Third Party */ = {
+			isa = PBXGroup;
+			children = (
+				BEE5A25C1AE7E55600F8B48F /* TTTAttributedLabel.h */,
+				BEE5A25D1AE7E55600F8B48F /* TTTAttributedLabel.m */,
+			);
+			name = "Third Party";
 			sourceTree = "<group>";
 		};
 		BEFE05811AE4B49C004313B8 /* Images */ = {
@@ -282,6 +297,7 @@
 				BE114C151ADE1C9C002ECBD5 /* User.swift in Sources */,
 				BEDC5C281ADF6D4C0086F03C /* Profile.swift in Sources */,
 				BE71B3011AE47CBF00705BDF /* TechCrunch.swift in Sources */,
+				BEE5A25E1AE7E55600F8B48F /* TTTAttributedLabel.m in Sources */,
 				BE71B3051AE47CD100705BDF /* HSHacks.swift in Sources */,
 				BE71B2FD1AE4623400705BDF /* Work.swift in Sources */,
 				BE3D66A21ADD5E6B005665D5 /* ViewController.swift in Sources */,
@@ -416,9 +432,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Jason Scharff/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Jason Scharff-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -426,9 +445,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Jason Scharff/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Jason Scharff-Bridging-Header.h";
 			};
 			name = Release;
 		};
