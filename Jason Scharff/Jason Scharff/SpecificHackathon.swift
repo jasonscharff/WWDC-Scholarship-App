@@ -18,7 +18,8 @@ class SpecificHackathon : UIViewController
   let yMarginBottom = 475
   let SCREEN_HEIGHT = Int(UIScreen.mainScreen().bounds.height)
   let SCREEN_WIDTH = Int(UIScreen.mainScreen().bounds.width)
-  
+  var scrollView = UIScrollView()
+ 
   
   
 
@@ -28,7 +29,10 @@ class SpecificHackathon : UIViewController
     self.view.backgroundColor = UIColor.whiteColor()
     addImage(imageNamed)
     addTitle(projectTitle)
+    scrollView.frame = CGRectMake(0, 0, CGFloat(SCREEN_WIDTH), CGFloat(SCREEN_HEIGHT))
+    self.view.addSubview(scrollView)
     addDescription(projectDescription)
+ 
   }
   
   
@@ -76,7 +80,7 @@ class SpecificHackathon : UIViewController
   func addDescription(description: String)
   {
     let marginX : CGFloat = 15
-    let marginY : CGFloat = 15
+    let marginY : CGFloat = 12
     var label = UILabel()
     label.font = UIFont(name: "AvenirNext-Regular", size: 15)
       
@@ -88,14 +92,14 @@ class SpecificHackathon : UIViewController
     let height : CGFloat = CGFloat(SCREEN_HEIGHT) - (lastElementBottom + marginY)
 
     let yCoord = lastElementBottom + marginY
-    label.frame = CGRectMake(marginX,yCoord,CGFloat(SCREEN_WIDTH) - 2 * marginX, CGFloat(SCREEN_HEIGHT) - lastElementBottom - marginY)
+    var frame = CGRectMake(marginX,yCoord,CGFloat(SCREEN_WIDTH) - 2 * marginX, CGFloat(SCREEN_HEIGHT) - lastElementBottom - marginY)
+    label.frame = frame
 
 
     label.text = description
     label.sizeToFit()
-
-    
-    self.view.addSubview(label)
+    scrollView.addSubview(label)
+   
     
   }
   
@@ -109,7 +113,7 @@ class SpecificHackathon : UIViewController
   func addTitle(text : String)
   {
     let marginY : CGFloat = 10
-    let height : CGFloat = 20
+    let height : CGFloat = 25
     var label = UILabel()
     label.font = UIFont(name: "AvenirNext-Regular", size : 24)
     label.frame = CGRectMake(0, lastElementBottom + marginY, CGFloat(SCREEN_WIDTH), height)
