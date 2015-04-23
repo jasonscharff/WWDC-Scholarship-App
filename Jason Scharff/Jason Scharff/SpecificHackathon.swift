@@ -8,6 +8,9 @@
 
 import Foundation
 import UIKit
+import AVFoundation
+import MediaPlayer
+
 class SpecificHackathon : UIViewController
 {
   var lastElementBottom : CGFloat = 64;
@@ -107,6 +110,13 @@ class SpecificHackathon : UIViewController
   {
     var label = UILabel()
    
+  }
+  
+  func addVideo(name : String, type: String)
+  {
+    var loc = NSBundle.mainBundle().pathForResource(name, ofType: type)
+    var player = MPMoviePlayerController(contentURL: NSURL(fileURLWithPath: loc!))
+    //Set frame, add, play
   }
   
   
