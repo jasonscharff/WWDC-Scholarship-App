@@ -20,6 +20,10 @@ class PennApps : SpecificHackathon
     
   }
   
+  override func viewDidDisappear(animated: Bool) {
+    self.videoPlayer.pause()
+  }
+  
     
   
   

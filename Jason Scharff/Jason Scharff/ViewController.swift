@@ -72,7 +72,9 @@ class ViewController: UIViewController {
     
     if currentUser.isValidUser()
     {
+      var delay = 0.1
       var i = 0
+      let speed = 0.8
       var currentY : Double = Double(TOP_BAR_HEIGHT) + margin
       for header in currentUser.details.keys
       {
@@ -82,29 +84,47 @@ class ViewController: UIViewController {
         if (i % 2 == 0)
         {
           var frame : CGRect = CGRectMake(CGFloat(offSet),CGFloat(currentY), CGFloat(radius), CGFloat(radius))
-          var button = CircleButton(frame: frame, color: Colors[i], label : String(stringInterpolationSegment: header))
+          var startFrame = CGRectMake(CGFloat(radius * -1),CGFloat(currentY), CGFloat(radius), CGFloat(radius))
+          var button = CircleButton(frame: startFrame, color: Colors[i], label : String(stringInterpolationSegment: header))
           if (currentUser.getType(header) == Profile.DescriptionTypes.ViewController)
           {
             button.addTarget(self, action: "goToViewController:", forControlEvents: .TouchUpInside)
           }
-          
+          UIView.animateWithDuration(speed,
+            delay: delay,
+            options: .CurveEaseInOut | .AllowUserInteraction,
+            animations: {
+              button.frame = frame
+            },
+            completion: { finished in
+              })
           self.view.addSubview(button)
         }
         else
         {
           var frame : CGRect = CGRectMake(CGFloat(SCREEN_WIDTH - offSet - radius),CGFloat(currentY), CGFloat(radius), CGFloat(radius))
-          var button = CircleButton(frame: frame, color: Colors[i], label : String(stringInterpolationSegment: header))
+          var startFrame = CGRectMake(CGFloat(SCREEN_WIDTH + radius),CGFloat(currentY), CGFloat(radius), CGFloat(radius))
+          var button = CircleButton(frame: startFrame, color: Colors[i], label : String(stringInterpolationSegment: header))
           if (currentUser.getType(header) == Profile.DescriptionTypes.ViewController)
           {
             button.addTarget(self, action: "goToViewController:", forControlEvents: .TouchUpInside)
           }
           
-          
+          UIView.animateWithDuration(speed,
+            delay: delay,
+            options: .CurveEaseInOut | .AllowUserInteraction,
+            animations: {
+              button.frame = frame
+            },
+            completion: { finished in
+          })
+
           self.view.addSubview(button)
         }
         
         currentY += yDistance
         i++
+        delay += (speed / 6)
       }
     }
   }

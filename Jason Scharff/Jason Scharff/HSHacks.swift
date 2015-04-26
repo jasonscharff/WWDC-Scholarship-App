@@ -19,4 +19,8 @@ class HSHacks : SpecificHackathon
     addLink("Challenge Post", destination: "http://challengepost.com/software/drone-buddy", title: "Challenge Post")
   }
   
+  override func viewDidDisappear(animated: Bool) {
+    self.videoPlayer.pause()
+  }
+  
 }
