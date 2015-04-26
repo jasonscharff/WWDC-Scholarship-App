@@ -30,6 +30,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     autoUser.addProfileElement("Work", controller: Work())
     autoUser.addProfileElement("Hackathon", controller: Hackathon())
     autoUser.addProfileElement("Contact", controller: Contact())
+    autoUser.addProfileElement("Volunteer Work", controller: Volunteer())
     UserInfo.currentUser = autoUser
     
     var pageControl = UIPageControl.appearance()

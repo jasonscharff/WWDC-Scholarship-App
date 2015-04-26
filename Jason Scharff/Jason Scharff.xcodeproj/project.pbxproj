@@ -35,6 +35,18 @@
 		BEE0DEC41AEC58F0008ABCD2 /* Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE0DEC31AEC58F0008ABCD2 /* Link.swift */; };
 		BEE0DEC61AEC5CDD008ABCD2 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE0DEC51AEC5CDD008ABCD2 /* WebView.swift */; };
 		BEE0DEC81AEC74D6008ABCD2 /* menlo_logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BEE0DEC71AEC74D6008ABCD2 /* menlo_logo.jpg */; };
+		BEE0DECA1AEC83D4008ABCD2 /* Entefy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE0DEC91AEC83D4008ABCD2 /* Entefy.swift */; };
+		BEE0DECC1AEC8816008ABCD2 /* Tinera.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE0DECB1AEC8816008ABCD2 /* Tinera.swift */; };
+		BEE0DECE1AEC8842008ABCD2 /* GeniusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE0DECD1AEC8842008ABCD2 /* GeniusBar.swift */; };
+		BEE0DED01AEC8914008ABCD2 /* entefy.png in Resources */ = {isa = PBXBuildFile; fileRef = BEE0DECF1AEC8914008ABCD2 /* entefy.png */; };
+		BEE0DED41AEC8E4C008ABCD2 /* WorkPlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE0DED31AEC8E4C008ABCD2 /* WorkPlace.swift */; };
+		BEE0DED61AEC91E5008ABCD2 /* tineraLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = BEE0DED51AEC91E5008ABCD2 /* tineraLogo.png */; };
+		BEE0DED81AEC96A5008ABCD2 /* tineraDemo.mov in Resources */ = {isa = PBXBuildFile; fileRef = BEE0DED71AEC96A5008ABCD2 /* tineraDemo.mov */; };
+		BEE0DEDA1AEC98D9008ABCD2 /* Volunteer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE0DED91AEC98D9008ABCD2 /* Volunteer.swift */; };
+		BEE0DEDC1AEC99BA008ABCD2 /* Scholars4Scholars.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE0DEDB1AEC99BA008ABCD2 /* Scholars4Scholars.swift */; };
+		BEE0DEDE1AEC99C3008ABCD2 /* TeenFoundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE0DEDD1AEC99C3008ABCD2 /* TeenFoundation.swift */; };
+		BEE0DEE01AEC9AF5008ABCD2 /* jtf_logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BEE0DEDF1AEC9AF5008ABCD2 /* jtf_logo.jpg */; };
+		BEE0DEE21AEC9B97008ABCD2 /* s4s_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = BEE0DEE11AEC9B97008ABCD2 /* s4s_logo.png */; };
 		BEE5A25E1AE7E55600F8B48F /* TTTAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE5A25D1AE7E55600F8B48F /* TTTAttributedLabel.m */; };
 		BEEF6F9A1AE1833200FB4F9B /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEF6F991AE1833200FB4F9B /* CircleButton.swift */; };
 		BEFE057E1AE4B497004313B8 /* hshacks.png in Resources */ = {isa = PBXBuildFile; fileRef = BEFE057B1AE4B497004313B8 /* hshacks.png */; };
@@ -85,6 +97,18 @@
 		BEE0DEC31AEC58F0008ABCD2 /* Link.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Link.swift; sourceTree = "<group>"; };
 		BEE0DEC51AEC5CDD008ABCD2 /* WebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		BEE0DEC71AEC74D6008ABCD2 /* menlo_logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = menlo_logo.jpg; sourceTree = "<group>"; };
+		BEE0DEC91AEC83D4008ABCD2 /* Entefy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entefy.swift; sourceTree = "<group>"; };
+		BEE0DECB1AEC8816008ABCD2 /* Tinera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tinera.swift; sourceTree = "<group>"; };
+		BEE0DECD1AEC8842008ABCD2 /* GeniusBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeniusBar.swift; sourceTree = "<group>"; };
+		BEE0DECF1AEC8914008ABCD2 /* entefy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = entefy.png; sourceTree = "<group>"; };
+		BEE0DED31AEC8E4C008ABCD2 /* WorkPlace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkPlace.swift; sourceTree = "<group>"; };
+		BEE0DED51AEC91E5008ABCD2 /* tineraLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tineraLogo.png; sourceTree = "<group>"; };
+		BEE0DED71AEC96A5008ABCD2 /* tineraDemo.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = tineraDemo.mov; sourceTree = "<group>"; };
+		BEE0DED91AEC98D9008ABCD2 /* Volunteer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Volunteer.swift; sourceTree = "<group>"; };
+		BEE0DEDB1AEC99BA008ABCD2 /* Scholars4Scholars.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scholars4Scholars.swift; sourceTree = "<group>"; };
+		BEE0DEDD1AEC99C3008ABCD2 /* TeenFoundation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeenFoundation.swift; sourceTree = "<group>"; };
+		BEE0DEDF1AEC9AF5008ABCD2 /* jtf_logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jtf_logo.jpg; sourceTree = "<group>"; };
+		BEE0DEE11AEC9B97008ABCD2 /* s4s_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = s4s_logo.png; sourceTree = "<group>"; };
 		BEE5A2571AE7E47B00F8B48F /* Jason Scharff-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Jason Scharff-Bridging-Header.h"; sourceTree = "<group>"; };
 		BEE5A25C1AE7E55600F8B48F /* TTTAttributedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTAttributedLabel.h; sourceTree = "<group>"; };
 		BEE5A25D1AE7E55600F8B48F /* TTTAttributedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTAttributedLabel.m; sourceTree = "<group>"; };
@@ -125,6 +149,7 @@
 				BE3D66981ADD5E6B005665D5 /* Products */,
 				BEFE05811AE4B49C004313B8 /* Images */,
 				BEE5A2571AE7E47B00F8B48F /* Jason Scharff-Bridging-Header.h */,
+				BEE0DED71AEC96A5008ABCD2 /* tineraDemo.mov */,
 				BEE0DEBD1AEC5557008ABCD2 /* jockulus.mp4 */,
 				BEE0DEBB1AEC4AC1008ABCD2 /* droneBuddy.mp4 */,
 			);
@@ -189,6 +214,9 @@
 		BE71B2F91AE461E500705BDF /* Jason Specific */ = {
 			isa = PBXGroup;
 			children = (
+				BEE0DED91AEC98D9008ABCD2 /* Volunteer.swift */,
+				BEE0DEDB1AEC99BA008ABCD2 /* Scholars4Scholars.swift */,
+				BEE0DEDD1AEC99C3008ABCD2 /* TeenFoundation.swift */,
 				BE71B2F71AE461C700705BDF /* Hackathon.swift */,
 				BE71B3001AE47CBF00705BDF /* TechCrunch.swift */,
 				BEAF913A1AE5444100C4C897 /* SpecificHackathon.swift */,
@@ -196,6 +224,10 @@
 				BE71B3041AE47CD100705BDF /* HSHacks.swift */,
 				BE71B2FA1AE4621F00705BDF /* Education.swift */,
 				BE71B2FC1AE4623400705BDF /* Work.swift */,
+				BEE0DECB1AEC8816008ABCD2 /* Tinera.swift */,
+				BEE0DECD1AEC8842008ABCD2 /* GeniusBar.swift */,
+				BEE0DED31AEC8E4C008ABCD2 /* WorkPlace.swift */,
+				BEE0DEC91AEC83D4008ABCD2 /* Entefy.swift */,
 				BE71B2FE1AE4626200705BDF /* Contact.swift */,
 			);
 			name = "Jason Specific";
@@ -213,6 +245,10 @@
 		BEFE05811AE4B49C004313B8 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				BEE0DEE11AEC9B97008ABCD2 /* s4s_logo.png */,
+				BEE0DEDF1AEC9AF5008ABCD2 /* jtf_logo.jpg */,
+				BEE0DED51AEC91E5008ABCD2 /* tineraLogo.png */,
+				BEE0DECF1AEC8914008ABCD2 /* entefy.png */,
 				BEE0DEC71AEC74D6008ABCD2 /* menlo_logo.jpg */,
 				BE8031A91AE9FFA7007EA768 /* PlayButton.png */,
 				BE8031A71AE9FF95007EA768 /* PauseButton.png */,
@@ -304,6 +340,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEE0DEC81AEC74D6008ABCD2 /* menlo_logo.jpg in Resources */,
+				BEE0DEE01AEC9AF5008ABCD2 /* jtf_logo.jpg in Resources */,
 				BEE0DEBE1AEC5568008ABCD2 /* jockulus.mp4 in Resources */,
 				BEE0DEBC1AEC4AF9008ABCD2 /* droneBuddy.mp4 in Resources */,
 				BE3D66A51ADD5E6B005665D5 /* Main.storyboard in Resources */,
@@ -311,8 +348,12 @@
 				BE3D66A71ADD5E6B005665D5 /* Images.xcassets in Resources */,
 				BE8031AA1AE9FFA7007EA768 /* PlayButton.png in Resources */,
 				BEFE057E1AE4B497004313B8 /* hshacks.png in Resources */,
+				BEE0DEE21AEC9B97008ABCD2 /* s4s_logo.png in Resources */,
+				BEE0DED01AEC8914008ABCD2 /* entefy.png in Resources */,
+				BEE0DED61AEC91E5008ABCD2 /* tineraLogo.png in Resources */,
 				BEFE05801AE4B497004313B8 /* techcrunch.png in Resources */,
 				BEFE057F1AE4B497004313B8 /* pennapps.png in Resources */,
+				BEE0DED81AEC96A5008ABCD2 /* tineraDemo.mov in Resources */,
 				BE8031A81AE9FF95007EA768 /* PauseButton.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,17 +375,24 @@
 				BE114C151ADE1C9C002ECBD5 /* User.swift in Sources */,
 				BEDC5C281ADF6D4C0086F03C /* Profile.swift in Sources */,
 				BE71B3011AE47CBF00705BDF /* TechCrunch.swift in Sources */,
+				BEE0DEDC1AEC99BA008ABCD2 /* Scholars4Scholars.swift in Sources */,
+				BEE0DED41AEC8E4C008ABCD2 /* WorkPlace.swift in Sources */,
 				BEB73BB61AE9354A0098D370 /* VideoPlayer.swift in Sources */,
 				BEE5A25E1AE7E55600F8B48F /* TTTAttributedLabel.m in Sources */,
 				BE71B3051AE47CD100705BDF /* HSHacks.swift in Sources */,
 				BE71B2FD1AE4623400705BDF /* Work.swift in Sources */,
 				BE3D66A21ADD5E6B005665D5 /* ViewController.swift in Sources */,
+				BEE0DEDE1AEC99C3008ABCD2 /* TeenFoundation.swift in Sources */,
 				BE71B2F81AE461C700705BDF /* Hackathon.swift in Sources */,
 				BE654B5A1AE1A8D30045175A /* URL.swift in Sources */,
 				BE71B2FF1AE4626200705BDF /* Contact.swift in Sources */,
 				BEEF6F9A1AE1833200FB4F9B /* CircleButton.swift in Sources */,
+				BEE0DECE1AEC8842008ABCD2 /* GeniusBar.swift in Sources */,
+				BEE0DEDA1AEC98D9008ABCD2 /* Volunteer.swift in Sources */,
 				BE71B3031AE47CC700705BDF /* PennApps.swift in Sources */,
 				BEE0DEC61AEC5CDD008ABCD2 /* WebView.swift in Sources */,
+				BEE0DECC1AEC8816008ABCD2 /* Tinera.swift in Sources */,
+				BEE0DECA1AEC83D4008ABCD2 /* Entefy.swift in Sources */,
 				BEAF913B1AE5444100C4C897 /* SpecificHackathon.swift in Sources */,
 				BE3D669D1ADD5E6B005665D5 /* AppDelegate.swift in Sources */,
 				BEE0DEC41AEC58F0008ABCD2 /* Link.swift in Sources */,

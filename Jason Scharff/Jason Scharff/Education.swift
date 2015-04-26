@@ -52,7 +52,6 @@ class Education : UIViewController, UIScrollViewDelegate
   
   func goToWebsite (sender : UITapGestureRecognizer)
   {
-    println("HOLA")
     var vc = WebView()
     vc.webPage = "http://menloschool.org"
     vc.title = "Menlo School"
