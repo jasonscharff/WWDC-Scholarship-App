@@ -92,7 +92,6 @@ class SpecificHackathon : UIViewController, UIScrollViewDelegate, LinkDelegate
     lastElementBottom += imageView.frame.height;
     
     scrollView.addSubview(imageView)
-    
   }
   
   func addDescription(description: String)

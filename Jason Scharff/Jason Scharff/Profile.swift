@@ -83,6 +83,17 @@ class Profile
     }
   }
   
+  func getController(heading : String) -> UIViewController
+  {
+    var description: AnyObject? = self.details[heading]
+    if description is UIViewController
+    {
+      let vc = description as! UIViewController
+      return vc
+    }
+    return UIViewController()
+  }
+  
   func getButtonCount() -> Int
   {
     return details.count

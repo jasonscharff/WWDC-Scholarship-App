@@ -34,6 +34,7 @@ class ViewController: UIViewController {
   let MIN_OFFSET : Int = 15
   
   
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     self.view.backgroundColor = UIColor.whiteColor()
@@ -147,15 +148,24 @@ class ViewController: UIViewController {
   }
   
   
+  
+  
   func goToViewController(sender: UIButton!)
   {
-    var vc = Hackathon()
-    navigationController?.pushViewController(vc, animated: true)
+    var currentUser = UserInfo.currentUser
+    var header = sender.titleLabel?.text
+    if (currentUser!.getType(header!) == Profile.DescriptionTypes.ViewController)
+    {
+      let vc = currentUser?.getController(header!)
+      navigationController?.pushViewController(vc!, animated: true)
+    }
   
+    
+    
   }
   
 
 
-
 }
+
 

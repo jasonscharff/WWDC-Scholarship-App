@@ -34,6 +34,7 @@
 		BEE0DEBE1AEC5568008ABCD2 /* jockulus.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = BEE0DEBD1AEC5557008ABCD2 /* jockulus.mp4 */; };
 		BEE0DEC41AEC58F0008ABCD2 /* Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE0DEC31AEC58F0008ABCD2 /* Link.swift */; };
 		BEE0DEC61AEC5CDD008ABCD2 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE0DEC51AEC5CDD008ABCD2 /* WebView.swift */; };
+		BEE0DEC81AEC74D6008ABCD2 /* menlo_logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BEE0DEC71AEC74D6008ABCD2 /* menlo_logo.jpg */; };
 		BEE5A25E1AE7E55600F8B48F /* TTTAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE5A25D1AE7E55600F8B48F /* TTTAttributedLabel.m */; };
 		BEEF6F9A1AE1833200FB4F9B /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEF6F991AE1833200FB4F9B /* CircleButton.swift */; };
 		BEFE057E1AE4B497004313B8 /* hshacks.png in Resources */ = {isa = PBXBuildFile; fileRef = BEFE057B1AE4B497004313B8 /* hshacks.png */; };
@@ -83,6 +84,7 @@
 		BEE0DEBD1AEC5557008ABCD2 /* jockulus.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = jockulus.mp4; sourceTree = "<group>"; };
 		BEE0DEC31AEC58F0008ABCD2 /* Link.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Link.swift; sourceTree = "<group>"; };
 		BEE0DEC51AEC5CDD008ABCD2 /* WebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		BEE0DEC71AEC74D6008ABCD2 /* menlo_logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = menlo_logo.jpg; sourceTree = "<group>"; };
 		BEE5A2571AE7E47B00F8B48F /* Jason Scharff-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Jason Scharff-Bridging-Header.h"; sourceTree = "<group>"; };
 		BEE5A25C1AE7E55600F8B48F /* TTTAttributedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTAttributedLabel.h; sourceTree = "<group>"; };
 		BEE5A25D1AE7E55600F8B48F /* TTTAttributedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTAttributedLabel.m; sourceTree = "<group>"; };
@@ -211,6 +213,7 @@
 		BEFE05811AE4B49C004313B8 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				BEE0DEC71AEC74D6008ABCD2 /* menlo_logo.jpg */,
 				BE8031A91AE9FFA7007EA768 /* PlayButton.png */,
 				BE8031A71AE9FF95007EA768 /* PauseButton.png */,
 				BEFE057B1AE4B497004313B8 /* hshacks.png */,
@@ -300,6 +303,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEE0DEC81AEC74D6008ABCD2 /* menlo_logo.jpg in Resources */,
 				BEE0DEBE1AEC5568008ABCD2 /* jockulus.mp4 in Resources */,
 				BEE0DEBC1AEC4AF9008ABCD2 /* droneBuddy.mp4 in Resources */,
 				BE3D66A51ADD5E6B005665D5 /* Main.storyboard in Resources */,
