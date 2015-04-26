@@ -27,7 +27,7 @@ class Profile
   {
     self.name = name;
     self.details = [String : AnyObject]()
-    self.backgroundImage = UIImage(named:"background.png")!
+    self.backgroundImage = UIImage()
   }
   
   init(name : String, backgroundImage : UIImage)

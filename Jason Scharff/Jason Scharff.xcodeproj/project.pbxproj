@@ -47,6 +47,10 @@
 		BEE0DEDE1AEC99C3008ABCD2 /* TeenFoundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE0DEDD1AEC99C3008ABCD2 /* TeenFoundation.swift */; };
 		BEE0DEE01AEC9AF5008ABCD2 /* jtf_logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BEE0DEDF1AEC9AF5008ABCD2 /* jtf_logo.jpg */; };
 		BEE0DEE21AEC9B97008ABCD2 /* s4s_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = BEE0DEE11AEC9B97008ABCD2 /* s4s_logo.png */; };
+		BEE0DEE41AECA3C2008ABCD2 /* Linkedin.png in Resources */ = {isa = PBXBuildFile; fileRef = BEE0DEE31AECA3C2008ABCD2 /* Linkedin.png */; };
+		BEE0DEEA1AECA6B0008ABCD2 /* mail.png in Resources */ = {isa = PBXBuildFile; fileRef = BEE0DEE91AECA6B0008ABCD2 /* mail.png */; };
+		BEE0DEEC1AECB0C8008ABCD2 /* phone.png in Resources */ = {isa = PBXBuildFile; fileRef = BEE0DEEB1AECB0C8008ABCD2 /* phone.png */; };
+		BEE0DEEE1AECB2B9008ABCD2 /* github.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BEE0DEED1AECB2B9008ABCD2 /* github.jpg */; };
 		BEE5A25E1AE7E55600F8B48F /* TTTAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE5A25D1AE7E55600F8B48F /* TTTAttributedLabel.m */; };
 		BEEF6F9A1AE1833200FB4F9B /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEF6F991AE1833200FB4F9B /* CircleButton.swift */; };
 		BEFE057E1AE4B497004313B8 /* hshacks.png in Resources */ = {isa = PBXBuildFile; fileRef = BEFE057B1AE4B497004313B8 /* hshacks.png */; };
@@ -109,6 +113,10 @@
 		BEE0DEDD1AEC99C3008ABCD2 /* TeenFoundation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeenFoundation.swift; sourceTree = "<group>"; };
 		BEE0DEDF1AEC9AF5008ABCD2 /* jtf_logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jtf_logo.jpg; sourceTree = "<group>"; };
 		BEE0DEE11AEC9B97008ABCD2 /* s4s_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = s4s_logo.png; sourceTree = "<group>"; };
+		BEE0DEE31AECA3C2008ABCD2 /* Linkedin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Linkedin.png; sourceTree = "<group>"; };
+		BEE0DEE91AECA6B0008ABCD2 /* mail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mail.png; sourceTree = "<group>"; };
+		BEE0DEEB1AECB0C8008ABCD2 /* phone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = phone.png; sourceTree = "<group>"; };
+		BEE0DEED1AECB2B9008ABCD2 /* github.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = github.jpg; sourceTree = "<group>"; };
 		BEE5A2571AE7E47B00F8B48F /* Jason Scharff-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Jason Scharff-Bridging-Header.h"; sourceTree = "<group>"; };
 		BEE5A25C1AE7E55600F8B48F /* TTTAttributedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTAttributedLabel.h; sourceTree = "<group>"; };
 		BEE5A25D1AE7E55600F8B48F /* TTTAttributedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTAttributedLabel.m; sourceTree = "<group>"; };
@@ -245,6 +253,10 @@
 		BEFE05811AE4B49C004313B8 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				BEE0DEED1AECB2B9008ABCD2 /* github.jpg */,
+				BEE0DEEB1AECB0C8008ABCD2 /* phone.png */,
+				BEE0DEE91AECA6B0008ABCD2 /* mail.png */,
+				BEE0DEE31AECA3C2008ABCD2 /* Linkedin.png */,
 				BEE0DEE11AEC9B97008ABCD2 /* s4s_logo.png */,
 				BEE0DEDF1AEC9AF5008ABCD2 /* jtf_logo.jpg */,
 				BEE0DED51AEC91E5008ABCD2 /* tineraLogo.png */,
@@ -339,10 +351,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEE0DEE41AECA3C2008ABCD2 /* Linkedin.png in Resources */,
 				BEE0DEC81AEC74D6008ABCD2 /* menlo_logo.jpg in Resources */,
+				BEE0DEEC1AECB0C8008ABCD2 /* phone.png in Resources */,
 				BEE0DEE01AEC9AF5008ABCD2 /* jtf_logo.jpg in Resources */,
 				BEE0DEBE1AEC5568008ABCD2 /* jockulus.mp4 in Resources */,
 				BEE0DEBC1AEC4AF9008ABCD2 /* droneBuddy.mp4 in Resources */,
+				BEE0DEEA1AECA6B0008ABCD2 /* mail.png in Resources */,
 				BE3D66A51ADD5E6B005665D5 /* Main.storyboard in Resources */,
 				BE3D66AA1ADD5E6B005665D5 /* LaunchScreen.xib in Resources */,
 				BE3D66A71ADD5E6B005665D5 /* Images.xcassets in Resources */,
@@ -352,6 +367,7 @@
 				BEE0DED01AEC8914008ABCD2 /* entefy.png in Resources */,
 				BEE0DED61AEC91E5008ABCD2 /* tineraLogo.png in Resources */,
 				BEFE05801AE4B497004313B8 /* techcrunch.png in Resources */,
+				BEE0DEEE1AECB2B9008ABCD2 /* github.jpg in Resources */,
 				BEFE057F1AE4B497004313B8 /* pennapps.png in Resources */,
 				BEE0DED81AEC96A5008ABCD2 /* tineraDemo.mov in Resources */,
 				BE8031A81AE9FF95007EA768 /* PauseButton.png in Resources */,
