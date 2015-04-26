@@ -20,6 +20,15 @@ class TechCrunch : SpecificHackathon
   override func viewDidLoad() {
 
     super.viewDidLoad("techcrunch.png", projectTitle: projectTitle, projectDescription: projectDescription)
+    addLink("Code Available Here", destination: "https://github.com/josebet1/owl", title: "Code")
+    addLink("Challenge Post", destination: "http://challengepost.com/software/owl-booth", title: "Code")
     
   }
+  
+ 
+  
+ 
+
+  
+  
 }

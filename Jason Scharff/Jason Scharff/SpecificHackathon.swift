@@ -11,9 +11,11 @@ import UIKit
 import AVFoundation
 import MediaPlayer
 
-class SpecificHackathon : UIViewController
+class SpecificHackathon : UIViewController, UIScrollViewDelegate, LinkDelegate
 {
   var lastElementBottom : CGFloat = 64;
+  
+  var videoPlayer : VideoPlayer = VideoPlayer()
   
   let xMargin = 20
   let yMarginTop = 10
@@ -22,10 +24,6 @@ class SpecificHackathon : UIViewController
   let SCREEN_HEIGHT = Int(UIScreen.mainScreen().bounds.height)
   let SCREEN_WIDTH = Int(UIScreen.mainScreen().bounds.width)
   var scrollView = UIScrollView()
- 
-  
-  
-
   
   func viewDidLoad(imageNamed : String, projectTitle : String, projectDescription : String) {
     super.viewDidLoad()
@@ -33,8 +31,12 @@ class SpecificHackathon : UIViewController
     addImage(imageNamed)
     addTitle(projectTitle)
     scrollView.frame = CGRectMake(0, 0, CGFloat(SCREEN_WIDTH), CGFloat(SCREEN_HEIGHT))
+    scrollView.delegate = self
+    scrollView.scrollEnabled = true
     self.view.addSubview(scrollView)
     addDescription(projectDescription)
+    
+
  
   }
   
@@ -42,6 +44,19 @@ class SpecificHackathon : UIViewController
   
   override func viewDidAppear(animated: Bool) {
     configureNavbar()
+    delay(0.7)
+      {
+        self.videoPlayer.play()
+      }
+  }
+  
+  func delay(delay:Double, closure:()->()) {
+    dispatch_after(
+      dispatch_time(
+        DISPATCH_TIME_NOW,
+        Int64(delay * Double(NSEC_PER_SEC))
+      ),
+      dispatch_get_main_queue(), closure)
   }
   
   
@@ -76,7 +91,7 @@ class SpecificHackathon : UIViewController
     }
     lastElementBottom += imageView.frame.height;
     
-    self.view.addSubview(imageView)
+    scrollView.addSubview(imageView)
     
   }
   
@@ -102,21 +117,68 @@ class SpecificHackathon : UIViewController
     label.text = description
     label.sizeToFit()
     scrollView.addSubview(label)
+    
+    
+    lastElementBottom += marginY + label.frame.size.height
+    
+    let x_scroll : CGFloat = self.scrollView.frame.minX
+    let y_scroll : CGFloat = self.scrollView.frame.minY
+    let width_scroll : CGFloat = self.scrollView.frame.width
+    let height_scroll : CGFloat = lastElementBottom + 30
+    scrollView.contentSize = CGSizeMake(width_scroll, height_scroll)
+
    
     
   }
   
-  func addLink(text : String, destination : String)
+  func addLink(text : String, destination : String, title : String)
   {
-    var label = UILabel()
+    var label = Link()
+    let yMargin = 35
+    label.title = title
+    var font = UIFont(name: "AvenirNext-Regular", size: 15)
+    label.setLink(text, link: destination, font: font!)
+    let height : CGFloat = 20
+    label.frame = CGRectMake(CGFloat(xMargin), lastElementBottom + CGFloat(yMargin), CGFloat(SCREEN_WIDTH) - 2 * CGFloat(xMargin), height)
+    label.delegate = self;
+    
+    let x_scroll : CGFloat = self.scrollView.frame.minX
+    let y_scroll : CGFloat = self.scrollView.frame.minY
+    let width_scroll : CGFloat = self.scrollView.contentSize.width
+    let height_scroll : CGFloat = self.scrollView.contentSize.height + CGFloat(yMargin) + height
+    scrollView.contentSize = CGSizeMake(width_scroll, height_scroll)
+    
+    scrollView.addSubview(label)
+    
+    lastElementBottom += height + CGFloat(yMarginTop)
+    
    
+  }
+  
+  func linkPressed(url: String, title : String) {
+    var vc = WebView()
+    vc.webPage = url
+    vc.title = title
+    navigationController?.pushViewController(vc, animated: true)
   }
   
   func addVideo(name : String, type: String)
   {
     var loc = NSBundle.mainBundle().pathForResource(name, ofType: type)
-    var player = MPMoviePlayerController(contentURL: NSURL(fileURLWithPath: loc!))
-    //Set frame, add, play
+    videoPlayer =  VideoPlayer(contentURL: NSURL(fileURLWithPath: loc!))
+    let width : CGFloat = CGFloat(SCREEN_WIDTH - xMargin * 2)
+    let height = width * (1080/1920)
+    videoPlayer.view.frame = CGRectMake(CGFloat(xMargin), lastElementBottom + CGFloat(yMarginTop), width, height)
+    
+    let x_scroll : CGFloat = self.scrollView.frame.minX
+    let y_scroll : CGFloat = self.scrollView.frame.minY
+    let width_scroll : CGFloat = self.scrollView.contentSize.width
+    let height_scroll : CGFloat = self.scrollView.contentSize.height + CGFloat(yMarginTop) + height
+    scrollView.contentSize = CGSizeMake(width_scroll, height_scroll)
+  
+    scrollView.addSubview(videoPlayer.view)
+    
+    lastElementBottom += CGFloat(yMarginTop) + height
   }
   
   
@@ -131,7 +193,7 @@ class SpecificHackathon : UIViewController
     label.textAlignment = NSTextAlignment.Center
     print(lastElementBottom)
     lastElementBottom += label.frame.height + marginY
-    self.view.addSubview(label)
+    scrollView.addSubview(label)
   }
   
   func configureNavbar()

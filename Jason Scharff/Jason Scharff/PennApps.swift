@@ -14,5 +14,13 @@ class PennApps : SpecificHackathon
   override func viewDidLoad() {
     
     super.viewDidLoad("pennapps.png", projectTitle: "Jockulus", projectDescription: projectDescription)
+      addVideo("jockulus", type: "mp4")
+      addLink("Code Available Here", destination: "https://github.com/jasonscharff/Jockulus", title: "Code")
+      addLink("Challenge Post", destination: "http://challengepost.com/software/jockulus", title: "Challenge Post")
+    
   }
+  
+    
+  
+  
 }

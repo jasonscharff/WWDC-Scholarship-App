@@ -149,7 +149,6 @@ class ViewController: UIViewController {
   
   func goToViewController(sender: UIButton!)
   {
-    let title = sender.titleLabel?.text
     var vc = Hackathon()
     navigationController?.pushViewController(vc, animated: true)
   
