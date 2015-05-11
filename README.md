@@ -1,2 +1,4 @@
-# WWDC-Scholarship-App
-My entry into the lovely world of WWDC.
+# WWDC Student Scholarship Entry
+For WWDC (The Apple Developer Conference) Apple allows students to write an app about themselves for a chance to win a scholarship to go to the conference. I won so if you need some inspiration here you go. It's actually a fairly basic app and my first app in Swift (I'm an Objective C developer). Feel free to play around with it.
+
+I spent a lot of time trying to implement a situation where users could expand on my app and add their own profiles. Unfortunately, I was 15 minutes away from the deadline and a bug with saving images made the app crash in the custom views so this part wasn't submitted. That code is available in the beta branch. Also, because I intended on adding that feature a lot of the code in master is built around the expectation that feature would be added so lots of kind of unncessary super classes and strucutres are built. 
