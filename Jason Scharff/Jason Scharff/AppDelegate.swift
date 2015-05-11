@@ -18,28 +18,49 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
     
-    var nav1 = UINavigationController()
-    var mainView = ViewController(nibName: nil, bundle: nil) //ViewController = Name of your controller
-    nav1.viewControllers = [mainView]
-    self.window!.rootViewController = nav1
-    self.window?.makeKeyAndVisible()
     
     // Override point for customization after application launch.
-    
-    var autoUser : Profile = Profile(name: "Jason Scharff")
-    autoUser.addProfileElement("Education", controller: Education())
-    autoUser.addProfileElement("Work", controller: Work())
-    autoUser.addProfileElement("Hackathon", controller: Hackathon())
-    autoUser.addProfileElement("Contact", controller: Contact())
-    autoUser.addProfileElement("Volunteer Work", controller: Volunteer())
-    UserInfo.currentUser = autoUser
+    let defaults = NSUserDefaults.standardUserDefaults()
+    var nsarray  = defaults.objectForKey("profiles") as? NSArray
+    if (nsarray == nil)
+    {
+      var array = [NSData]()
+      var autoUser : Profile = Profile(name: "Jason Scharff")
+      autoUser.addProfileElement("Education", controller: Education())
+      autoUser.addProfileElement("Work", controller: Work())
+      autoUser.addProfileElement("Hackathon", controller: Hackathon())
+      autoUser.addProfileElement("Contact", controller: Contact())
+      autoUser.addProfileElement("Volunteer Work", controller: Volunteer())
+      UserInfo.currentUser = autoUser
+      var data  = NSKeyedArchiver.archivedDataWithRootObject(autoUser)
+      
+      array.append(data)
+      defaults.setObject(array, forKey: "profiles")
+
+    }
+    else
+    {
+      var autoUser : Profile = Profile(name: "Jason Scharff")
+      autoUser.addProfileElement("Education", controller: Education())
+      autoUser.addProfileElement("Work", controller: Work())
+      autoUser.addProfileElement("Hackathon", controller: Hackathon())
+      autoUser.addProfileElement("Contact", controller: Contact())
+      autoUser.addProfileElement("Volunteer Work", controller: Volunteer())
+      UserInfo.currentUser = autoUser
+    }
+
     
     var pageControl = UIPageControl.appearance()
     pageControl.pageIndicatorTintColor = UIColor.blackColor()
     pageControl.currentPageIndicatorTintColor = UIColor.purpleColor()
     pageControl.backgroundColor = UIColor.whiteColor()
     
-    
+    var nav1 = UINavigationController()
+    var mainView = UserView(nibName: nil, bundle: nil) //ViewController = Name of your controller
+    nav1.viewControllers = [mainView]
+    self.window!.rootViewController = nav1
+    self.window?.makeKeyAndVisible()
+
     
     return true
   }

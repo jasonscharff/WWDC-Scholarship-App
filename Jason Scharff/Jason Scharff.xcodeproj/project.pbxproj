@@ -25,6 +25,12 @@
 		BE71B3051AE47CD100705BDF /* HSHacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE71B3041AE47CD100705BDF /* HSHacks.swift */; };
 		BE8031A81AE9FF95007EA768 /* PauseButton.png in Resources */ = {isa = PBXBuildFile; fileRef = BE8031A71AE9FF95007EA768 /* PauseButton.png */; };
 		BE8031AA1AE9FFA7007EA768 /* PlayButton.png in Resources */ = {isa = PBXBuildFile; fileRef = BE8031A91AE9FFA7007EA768 /* PlayButton.png */; };
+		BE852CAF1AED54BA00838D35 /* UserAddedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE852CAE1AED54BA00838D35 /* UserAddedView.swift */; };
+		BE852CB31AED595E00838D35 /* AddStageOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE852CB21AED595E00838D35 /* AddStageOne.swift */; };
+		BE852CB51AED5FC600838D35 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE852CB41AED5FC600838D35 /* UserView.swift */; };
+		BE852CB71AED770500838D35 /* AddStageTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE852CB61AED770500838D35 /* AddStageTwo.swift */; };
+		BE852CB91AED846000838D35 /* AddUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE852CB81AED846000838D35 /* AddUser.swift */; };
+		BE852CBB1AEDA4F500838D35 /* CustomViewObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE852CBA1AEDA4F500838D35 /* CustomViewObject.swift */; };
 		BEAF913B1AE5444100C4C897 /* SpecificHackathon.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAF913A1AE5444100C4C897 /* SpecificHackathon.swift */; };
 		BEB73BB01AE8B54D0098D370 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEB73BAF1AE8B54D0098D370 /* AVFoundation.framework */; };
 		BEB73BB21AE8B5EA0098D370 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEB73BB11AE8B5EA0098D370 /* MediaPlayer.framework */; };
@@ -91,6 +97,12 @@
 		BE71B3041AE47CD100705BDF /* HSHacks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSHacks.swift; sourceTree = "<group>"; };
 		BE8031A71AE9FF95007EA768 /* PauseButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PauseButton.png; sourceTree = "<group>"; };
 		BE8031A91AE9FFA7007EA768 /* PlayButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlayButton.png; sourceTree = "<group>"; };
+		BE852CAE1AED54BA00838D35 /* UserAddedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAddedView.swift; sourceTree = "<group>"; };
+		BE852CB21AED595E00838D35 /* AddStageOne.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddStageOne.swift; sourceTree = "<group>"; };
+		BE852CB41AED5FC600838D35 /* UserView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
+		BE852CB61AED770500838D35 /* AddStageTwo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddStageTwo.swift; sourceTree = "<group>"; };
+		BE852CB81AED846000838D35 /* AddUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddUser.swift; sourceTree = "<group>"; };
+		BE852CBA1AEDA4F500838D35 /* CustomViewObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomViewObject.swift; sourceTree = "<group>"; };
 		BEAF913A1AE5444100C4C897 /* SpecificHackathon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpecificHackathon.swift; sourceTree = "<group>"; };
 		BEB73BAF1AE8B54D0098D370 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		BEB73BB11AE8B5EA0098D370 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
@@ -181,8 +193,14 @@
 				BEEF6F991AE1833200FB4F9B /* CircleButton.swift */,
 				BE3D669C1ADD5E6B005665D5 /* AppDelegate.swift */,
 				BE3D66A11ADD5E6B005665D5 /* ViewController.swift */,
+				BE852CB81AED846000838D35 /* AddUser.swift */,
 				BE114C141ADE1C9C002ECBD5 /* User.swift */,
 				BEDC5C271ADF6D4C0086F03C /* Profile.swift */,
+				BE852CB41AED5FC600838D35 /* UserView.swift */,
+				BE852CB21AED595E00838D35 /* AddStageOne.swift */,
+				BE852CB61AED770500838D35 /* AddStageTwo.swift */,
+				BE852CAE1AED54BA00838D35 /* UserAddedView.swift */,
+				BE852CBA1AEDA4F500838D35 /* CustomViewObject.swift */,
 				BE654B591AE1A8D30045175A /* URL.swift */,
 				BE71B2F91AE461E500705BDF /* Jason Specific */,
 				BE3D66A31ADD5E6B005665D5 /* Main.storyboard */,
@@ -389,10 +407,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE114C151ADE1C9C002ECBD5 /* User.swift in Sources */,
+				BE852CAF1AED54BA00838D35 /* UserAddedView.swift in Sources */,
 				BEDC5C281ADF6D4C0086F03C /* Profile.swift in Sources */,
+				BE852CB71AED770500838D35 /* AddStageTwo.swift in Sources */,
 				BE71B3011AE47CBF00705BDF /* TechCrunch.swift in Sources */,
 				BEE0DEDC1AEC99BA008ABCD2 /* Scholars4Scholars.swift in Sources */,
 				BEE0DED41AEC8E4C008ABCD2 /* WorkPlace.swift in Sources */,
+				BE852CB51AED5FC600838D35 /* UserView.swift in Sources */,
+				BE852CB91AED846000838D35 /* AddUser.swift in Sources */,
 				BEB73BB61AE9354A0098D370 /* VideoPlayer.swift in Sources */,
 				BEE5A25E1AE7E55600F8B48F /* TTTAttributedLabel.m in Sources */,
 				BE71B3051AE47CD100705BDF /* HSHacks.swift in Sources */,
@@ -411,8 +433,10 @@
 				BEE0DECA1AEC83D4008ABCD2 /* Entefy.swift in Sources */,
 				BEAF913B1AE5444100C4C897 /* SpecificHackathon.swift in Sources */,
 				BE3D669D1ADD5E6B005665D5 /* AppDelegate.swift in Sources */,
+				BE852CB31AED595E00838D35 /* AddStageOne.swift in Sources */,
 				BEE0DEC41AEC58F0008ABCD2 /* Link.swift in Sources */,
 				BE3D66A01ADD5E6B005665D5 /* Jason_Scharff.xcdatamodeld in Sources */,
+				BE852CBB1AEDA4F500838D35 /* CustomViewObject.swift in Sources */,
 				BE71B2FB1AE4621F00705BDF /* Education.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

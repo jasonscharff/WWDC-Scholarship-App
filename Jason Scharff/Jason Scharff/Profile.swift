@@ -9,11 +9,10 @@
 import Foundation
 import UIKit
 
-class Profile
+class Profile : NSObject, NSCoding
 {
   var name : String
   var details : [String : AnyObject]
-  var backgroundImage : UIImage
   
   enum DescriptionTypes
   {
@@ -23,18 +22,32 @@ class Profile
     case NotFound
   }
   
+  override init()
+  {
+    self.name = ""
+    self.details = [String : AnyObject]()
+  }
   init(name : String)
   {
     self.name = name;
     self.details = [String : AnyObject]()
-    self.backgroundImage = UIImage()
   }
   
-  init(name : String, backgroundImage : UIImage)
+  required init(coder aDecoder: NSCoder)
+  {
+    self.name =  aDecoder.decodeObjectForKey("name") as! String!
+    self.details = aDecoder.decodeObjectForKey("details") as! Dictionary
+  }
+  
+  func encodeWithCoder(aCoder: NSCoder)
+  {
+    aCoder.encodeObject(name, forKey: "name")
+    aCoder.encodeObject(details, forKey: "details")
+  }
+  
+  func addName(name : String)
   {
     self.name = name
-    self.details = [String : AnyObject]()
-    self.backgroundImage = backgroundImage
   }
   
   func addProfileElement(heading : String, description : String)
@@ -50,6 +63,11 @@ class Profile
   func addProfileElement(heading : String, controller : UIViewController)
   {
     self.details[heading] = controller
+  }
+  
+  func addProfileElement (heading : String, object : CustomViewObject)
+  {
+    self.details[heading] = object
   }
   
   func isValidUser() -> Bool
@@ -73,7 +91,7 @@ class Profile
     {
       return DescriptionTypes.URL
     }
-    else if description is UIViewController
+    else if description is UIViewController || description is CustomViewObject
     {
       return DescriptionTypes.ViewController
     }
@@ -86,11 +104,24 @@ class Profile
   func getController(heading : String) -> UIViewController
   {
     var description: AnyObject? = self.details[heading]
-    if description is UIViewController
+    if (description is CustomViewObject)
+    {
+      var custom = description as! CustomViewObject
+      var controller = UserAddedView()
+      controller.header = custom.header
+      var image = custom.image
+      println(image.size.width)
+      controller.addImage(image, website: custom.url, websiteTitle: heading)
+      controller.addTitle(custom.headerTitle)
+      controller.addDescription(custom.pageDescription)
+      return controller
+    }
+    else if description is UIViewController
     {
       let vc = description as! UIViewController
       return vc
     }
+    
     return UIViewController()
   }
   
